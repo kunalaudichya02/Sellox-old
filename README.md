@@ -1,4 +1,4 @@
-# Project Soundscape
+# Project Sellox
 
 Develop an elegant React.js Music Application. 
 
@@ -49,13 +49,13 @@ To set up a development environment, please follow these steps:
 1. Clone the repo
 
    ```shell
-    git clone https://github.com/bhavy03/Soundscape.git
+    git clone https://github.com/bhavy03/Sellox.git
    ```
 
 2. Change directory to the project directory
 
     ```shell
-    cd LYRICKS_CLONE
+    cd client
     ```
 
 3. Install the dependencies
