@@ -1,6 +1,6 @@
 # Project Sellox
 
-Develop an elegant React.js Music Application.
+Develop an elegant React.js Ecommerce Application.
 
 # Contributing
 
