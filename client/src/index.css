@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.stick {
+  position: sticky;
+  top: 3px;
+}
