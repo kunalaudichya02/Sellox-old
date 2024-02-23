@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { Route, Routes } from 'react-router-dom';
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -29,15 +29,18 @@ const Login = () => {
         }
     };
     return (
-        <div>
+        <div className="w-1/2 j-full">
             <form onSubmit={handleSubmit}>
-                <p>Email</p>
+                <p><input type="email" placeholder="email" /></p>
                 <input type="email" value={email}
                     onChange={(e) => setEmail(e.target.value)} />
-                <p>Password</p>
+                <p><input type="password" placeholder="password" /></p>
                 <input type="text" value={password} onChange={(e) => setPassword(e.target.value)} />
                 <br />
-                <button type="submit">login</button>
+                <p>Don't have an account?
+                <a href="">Sign up</a>
+                </p>
+                <button  className="bg-purple-300 text-white px-4 py-2" type="submit">login</button>
             </form>
             <p>{data.message}</p>
         </div>
