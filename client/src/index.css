@@ -4,5 +4,13 @@
 
 .stick {
   position: sticky;
-  top: 3px;
+  top: 0px;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+.shadow{
+  
 }

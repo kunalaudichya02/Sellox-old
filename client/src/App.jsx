@@ -14,15 +14,15 @@ const App = () => {
       <div>
         <div>
           <div className="flex flex-col w-full">
-            <div className='rounded-lg bg-slate-600 m-3 relative stick'>
+            <div className=' bg-violet-200  relative stick shadow-md'>
               <nav className="m-3 relative stick">
                 <Navbar />
               </nav>
-              <search className='w-full'>
+              <search className='w-full '>
                 <SearchBar />
               </search>
             </div>
-            <main className="m-3 w-full h-dvh bg-slate-400 rounded-md flex justify-center items-center  ">
+            <main className="w-[95%] my-4 h-dvh bg-slate-50 m-auto rounded-md flex justify-center items-center  ">
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/user/login" element={<Login />} />
@@ -32,7 +32,7 @@ const App = () => {
                 <Route path="/rent" element={<Rent />} />
               </Routes>
             </main>
-            <footer className="m-3 w-full h-40 rounded-md bg-slate-500 ">
+            <footer className="w-full h-40 rounded-md bg-violet-900 text-white shadow-md">
               <Footer />
             </footer>
           </div>
