@@ -13,16 +13,16 @@ const App = () => {
     <>
       <div>
         <div>
-          <div className="flex flex-col ww m-2">
-            <div className='rounded-lg bg-slate-600 m-3 relative stick'>
-              <nav className="m-3 relative stick">
+          <div className="flex flex-col p-2 relative">
+            <div className=' bg-violet-200 relative stick shadow-md z-10 '>
+              <nav className="p-3 relative stick ">
                 <Navbar />
               </nav>
-              <search className='w-full'>
+              <search className='w-full '>
                 <SearchBar />
               </search>
             </div>
-            <main className="m-3 w-full h-dvh bg-slate-400 rounded-md flex relative " style={{ overflow: 'hidden' }}>
+            <main className="my-4 w-[99%] h-dvh bg-slate-50 rounded-md flex relative m-auto" style={{ overflow: 'hidden' }}>
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/user/login" element={<Login />} />
@@ -32,7 +32,7 @@ const App = () => {
                 <Route path="/rent" element={<Rent />} />
               </Routes>
             </main>
-            <footer className="m-3 w-full h-40 rounded-md bg-slate-500 ">
+            <footer className="w-full h-40 rounded-md bg-violet-900 text-white shadow-md">
               <Footer />
             </footer>
           </div>

@@ -4,7 +4,7 @@ const Home = () => {
     const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     return (
         <div className="p-6">
-            <div className="flex flex-wrap gap-3 sm:justify-start justify-center items-center">
+            <div className="flex flex-wrap gap-6 md:justify-evenly justify-center items-center">
                 {
                     arr.map((ever, i) => (
                         <Cards key={i} />

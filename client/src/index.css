@@ -8,11 +8,8 @@ body{
 }
 .stick {
   position: sticky;
-  top: 3px;
+  top: 0px;
 }
 ::-webkit-scrollbar {
   display: none;
-}
-.ww{
-  width: 100vw;
 }
