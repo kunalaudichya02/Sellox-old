@@ -13,7 +13,7 @@ const App = () => {
     <>
       <div>
         <div>
-          <div className="flex flex-col w-full">
+          <div className="flex flex-col ww m-2">
             <div className='rounded-lg bg-slate-600 m-3 relative stick'>
               <nav className="m-3 relative stick">
                 <Navbar />
@@ -22,7 +22,7 @@ const App = () => {
                 <SearchBar />
               </search>
             </div>
-            <main className="m-3 w-full h-dvh bg-slate-400 rounded-md flex justify-center items-center  ">
+            <main className="m-3 w-full h-dvh bg-slate-400 rounded-md flex relative " style={{ overflow: 'hidden' }}>
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/user/login" element={<Login />} />
