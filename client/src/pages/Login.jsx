@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { Link, Route, Routes } from "react-router-dom";
-import Signup from "./Signup";
+import { Link } from "react-router-dom";
+// import Signup from "./Signup";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [data, setData] = useState("");
+  console.log(data)
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -30,9 +31,9 @@ const Login = () => {
     }
   };
   return (
-  
+
     <>
-     <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 shadow-md ">
+      <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 shadow-md ">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm ">
           <h1 className="mt-10 text-center text-3xl font-bold leading-9 tracking-tight  text-gray-900">
             Sign in to your account
@@ -87,17 +88,19 @@ const Login = () => {
             </div>
 
             <div className="flex space-x-5 px-1 text-xl">
-                <p>Don't have an account?</p>
-                {/* <Link to='/user/Signup' className="font-semibold hover:text-blue-600"><Signup /></Link> */}
-                <Link to="/user/Signup" className='font-semibold hover:text-blue-600'>Signup</Link><p></p>
+              <p>Don&apos;t have an account?</p>
+              {/* <Link to='/user/Signup' className="font-semibold hover:text-blue-600"><Signup /></Link> */}
+              <Link to="/user/Signup" className='font-semibold text-blue-600 underline'>Signup</Link><p></p>
             </div>
             <div>
-              <button
-                type="submit"
-                className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-3 text-xl  font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 "
-              >
-                LOGIN
-              </button>
+              <Link to="/">
+                <button
+                  type="submit"
+                  className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-3 text-xl  font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 "
+                >
+                  LOGIN
+                </button>
+              </Link>
             </div>
           </form>
         </div>

@@ -1,6 +1,5 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import Login from '../pages/Login';
+// import Login from '../pages/Login';
 
 const SignUpForm = () => {
     return (
@@ -8,27 +7,27 @@ const SignUpForm = () => {
             <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
                 <div className="bg-white px-6 py-8 rounded shadow-md text-black w-300 ">
                     <h1 className="mb-8 text-4xl font-semibold text-center ">Sign up</h1>
-                    <input 
+                    <input
                         type="text"
                         required
                         className="block border border-gray-300 w-full p-3 rounded mb-4"
                         name="fullname"
                         placeholder="Full Name" />
- 
-                    <input 
+
+                    <input
                         type="text"
                         required
                         className="block border border-gray-300 w-full p-3 rounded mb-4"
                         name="email"
                         placeholder="Email" />
 
-                    <input 
+                    <input
                         type="text"
                         required
                         className="block border border-gray-300 w-full p-3 rounded mb-4"
                         name="password"
-                        placeholder='College Enroll No. (for ex: 2021CTAE000)  '/>
-                    <input 
+                        placeholder='College Enroll No. (for ex: 2021CTAE000)  ' />
+                    <input
                         type="password"
                         required
                         className="block border border-gray-300 w-full p-3 rounded mb-4"
@@ -51,10 +50,10 @@ const SignUpForm = () => {
                     </div> */}
                 </div>
 
-                <div className="text-gray-600 mt-6">
-                    Already have an account? 
-                    <Link className="no-underline border-b border-blue-500 text-blue-500" to="/user/Login">
-                        Log in
+                <div className="text-gray-600 mt-6 flex items-center">
+                    Already have an account?
+                    <Link className="no-underline border-b border-blue-500 text-blue-500 ml-2" to="/user/Login">
+                        Login
                     </Link>.
                 </div>
             </div>

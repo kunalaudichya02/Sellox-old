@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 const Cards = () => {
     return (
         <>
-            <Link to="/card/cardid">
+            <Link to="/user/card/cardid">
                 <div className="rounded-md bg-slate-100 shadow-md">
                     <div className="w-60 h-60 flex flex-col p-2">
                         <div className="h-2/3">
