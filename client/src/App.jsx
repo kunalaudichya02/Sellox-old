@@ -8,6 +8,7 @@ import Chat from './pages/Chat'
 import Sell from './pages/Sell';
 import Rent from './pages/Rent';
 import SearchBar from './components/SearchBar';
+import CardDetail from './pages/CardDetail';
 const App = () => {
   return (
     <>
@@ -30,6 +31,7 @@ const App = () => {
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/sell" element={<Sell />} />
                 <Route path="/rent" element={<Rent />} />
+                <Route path="/card/cardid" element={<CardDetail />} />
               </Routes>
             </main>
             <footer className="w-full h-40 rounded-md bg-violet-900 text-white shadow-md">
