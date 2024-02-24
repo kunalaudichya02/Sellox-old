@@ -12,8 +12,8 @@ import '../index.css'
 const links = [
     { name: 'Home', to: '/', icon: HiOutlineHome },
     { name: 'Chat', to: '/chat', icon: HiOutlinePhotograph },
-    { name: 'Sell', to: '/sell', icon: HiOutlineUserGroup },
-    { name: 'Rent', to: '/rent', icon: HiOutlineHashtag },
+    { name: 'Sell', to: '/user/sell', icon: HiOutlineUserGroup },
+    { name: 'Rent', to: '/user/rent', icon: HiOutlineHashtag },
 ];
 
 // eslint-disable-next-line react/prop-types

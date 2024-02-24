@@ -1,4 +1,5 @@
 import Card from "../Models/cardModel.js";
+import path from "path";
 
 const newCard = async (req, res) => {
   try {
@@ -8,7 +9,7 @@ const newCard = async (req, res) => {
 
     console.log(req.body);
     const { productName, price, sellerName, details, duration } = req.body;
-    const imagePath = req.file.path;
+    const imagePath = path.normalize(req.file.path);
 
     // Save image path to database
     const newCard = new Card({

@@ -34,7 +34,7 @@ const App = () => {
                 <Route path="/user/sell" element={<Sell />} />
                 <Route path="/user/rent" element={<Rent />} />
                 {/* <Route path="/upload" element={<Home />} /> */}
-                <Route path="/card/cardid" element={<CardDetail />} />
+                <Route path="/card/:cardId" element={<CardDetail />} />
               </Routes>
             </main>
             <footer className="w-full h-40 rounded-md bg-violet-900 text-white shadow-md">
