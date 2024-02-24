@@ -30,55 +30,7 @@ const Login = () => {
     }
   };
   return (
-    // <div className="w-1/2 h-4/5 j-full bg-yellow-400 flex flex-col align-center justify-center text-center px-4">
-    //   <form
-    //     onSubmit={handleSubmit}
-    //     className="flex flex-col justify-center align-center bg-green-400  px-3"
-    //   >
-
-
-    //     <div className="inputs ">
-    //       <div className="flex ">
-    //         <FaUser />
-    //         <input
-    //           type="email"
-    //           placeholder="email"
-    //           className="mb-2 p-2 px-4 "
-    //           value={email}
-    //           onChange={(e) => setEmail(e.target.value)}
-    //         />
-    //       </div>
-    //       <div className="flex">
-    //         <FaLock />
-    //         <input
-    //           type="password"
-    //           placeholder="password"
-    //           className="mb-2 p-2 px-4"
-    //           value={password}
-    //           onChange={(e) => setPassword(e.target.value)}
-    //         />
-    //       </div>
-    //     </div>
-
-
-    //     {/* <p className="flex flex-col">Don't have an account? <br />
-    //             <a href="" className="px-3 py-2 bg-purple-400 py-1">Sign up</a>
-    //             </p> */}
-    //     <div>
-    //       Don't have an account?{" "}
-    //       <span className="text-white font-semibold">
-    //         <a href="">Sign up</a>
-    //       </span>
-    //     </div>
-    //     <button
-    //       className="bg-purple-800 rounded-lg text-xl text-white px-4 py-2 mb-2 mt-3"
-    //       type="submit"
-    //     >
-    //       login
-    //     </button>
-    //   </form>
-    //   <p>{data.message}</p>
-    // </div>
+  
     <>
      <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 shadow-md ">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm ">

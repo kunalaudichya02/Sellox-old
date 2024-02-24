@@ -9,21 +9,22 @@ import Sell from './pages/Sell';
 import Rent from './pages/Rent';
 import SearchBar from './components/SearchBar';
 import Signup from './pages/Signup';
+import CardDetail from './pages/CardDetail';
 const App = () => {
   return (
     <>
       <div>
         <div>
-          <div className="flex flex-col w-full">
-            <div className=' bg-violet-200  relative stick shadow-md'>
-              <nav className="m-3 relative stick">
+          <div className="flex flex-col p-2 relative">
+            <div className=' bg-violet-200 relative stick shadow-md z-10 '>
+              <nav className="p-3 relative stick ">
                 <Navbar />
               </nav>
               <search className='w-full '>
                 <SearchBar />
               </search>
             </div>
-            <main className="w-[95%] my-4 h-dvh bg-slate-50 m-auto rounded-md flex justify-center items-center  ">
+            <main className="my-4 w-[99%] h-dvh bg-slate-50 rounded-md flex relative m-auto" style={{ overflow: 'hidden' }}>
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/user/login" element={<Login />} />
@@ -32,6 +33,7 @@ const App = () => {
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/sell" element={<Sell />} />
                 <Route path="/rent" element={<Rent />} />
+                <Route path="/card/cardid" element={<CardDetail />} />
               </Routes>
             </main>
             <footer className="w-full h-40 rounded-md bg-violet-900 text-white shadow-md">
