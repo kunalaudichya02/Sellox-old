@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { FaUser } from "react-icons/fa";
-import { FaLock } from "react-icons/fa";
 import { Link, Route, Routes } from "react-router-dom";
 import Signup from "./Signup";
 const Login = () => {
