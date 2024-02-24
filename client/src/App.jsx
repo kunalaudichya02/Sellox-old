@@ -8,6 +8,7 @@ import Chat from './pages/Chat'
 import Sell from './pages/Sell';
 import Rent from './pages/Rent';
 import SearchBar from './components/SearchBar';
+import Signup from './pages/Signup';
 const App = () => {
   return (
     <>
@@ -26,6 +27,7 @@ const App = () => {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/user/login" element={<Login />} />
+                <Route path="/user/Signup" element={<Signup />} />
                 <Route path="/chat" element={<Chat />} />
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/sell" element={<Sell />} />
